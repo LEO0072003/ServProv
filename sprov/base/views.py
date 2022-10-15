@@ -59,6 +59,7 @@ def servicePage(request,pk):
     return render(request, 'base/serv_page.html', context)
 
 def allServicePage(request):
+    ''' Page listing all services '''
     services = ServiceModel.objects.all()
     context = {'services': services}
 
