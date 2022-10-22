@@ -1,0 +1,1 @@
+web gunicorn sprov.wsgi:application --log-file -
